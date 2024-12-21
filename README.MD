@@ -72,7 +72,7 @@ cd cmd/calc_service
 
 go run main.go
 ```
-Сервер запустится на http://localhost:8080. Вы должны увидеть следующий вывод:
+Сервер запустится на http://localhost:8080/api/v1/calculate. Вы должны увидеть следующий вывод:
 
 
 ```text
