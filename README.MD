@@ -85,9 +85,11 @@ go run main.go
 ```
 ```bash
 
-curl -X POST -H "Content-Type: application/json" -d '{"expression": "3 + 5 * 2"}' http://localhost:8080/api/v1/calculate
-Это должно вернуть:
+curl --location --request POST "http://localhost:8080/api/v1/calculate" --header "Content-Type: application/json" --data "{\"expression\": \"ads\"}"
+{"error": "Internal server error"}
 ```
+Это должно вернуть:
+
 ```json
 
 {
