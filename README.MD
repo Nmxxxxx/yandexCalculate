@@ -64,29 +64,32 @@
 
 ```bash
 
-git clone <адрес-репозитория>
-cd <папка-репозитория>
+git clone https://github.com/Nmxxxxx/yandexCalculate.git
+cd cmd/calc_service
 Запустите сервер:
 ```
 ```bash
 
 go run main.go
-Сервер запустится на http://localhost:8080. Вы должны увидеть следующий вывод:
 ```
+Сервер запустится на http://localhost:8080. Вы должны увидеть следующий вывод:
+
 
 ```text
 
 Сервер запущен на порту 8080
-Тестирование API
-Вы можете протестировать API с помощью таких инструментов, как curl или Postman.
+```
+
+### Тестирование API
+Вы можете протестировать API с помощью таких инструмента, как curl.
 
 Пример использования curl
-Чтобы вычислить выражение 3 + 5 * 2, вы можете использовать следующую команду:
+О
+Чтобы вычислить выражение 3 + 5 * 2, вы можете использовать следующую команду, но для начала откройте другую cmd и перейдите в папку проекта:
 ```
 ```bash
 
-curl --location --request POST "http://localhost:8080/api/v1/calculate" --header "Content-Type: application/json" --data "{\"expression\": \"ads\"}"
-{"error": "Internal server error"}
+curl --location --request POST "http://localhost:8080/api/v1/calculate" --header "Content-Type: application/json" --data "{\"expression\": \"3 + 5 * 2\"}"
 ```
 Это должно вернуть:
 
